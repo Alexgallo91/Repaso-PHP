@@ -9,6 +9,12 @@
 <body>
 	<?php  
 		echo ini_get("session.use_cookies");
+
+		if (ini_get("session.use_cookies") == true) 
+		{
+			echo "<br>si se esta usando sesiones ".
+				 "dentro de este servidor";
+		}
 	?>
 </body>
 </html>
